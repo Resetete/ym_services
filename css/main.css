@@ -43,6 +43,23 @@ h1 {
   width: 66%;
 }
 
+.button {
+  color: #EAEFEE;
+  width: 150px;
+  height: 5vh;
+  border: 0px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.button.first_level_button {
+  background: #3FB5AD;
+}
+
+.button.second_level_button {
+  background: #EEA231;
+}
+
 /***** HEADER *****/
 
 header {
@@ -85,7 +102,28 @@ header #logo {
 /***** STARTPAGE *****/
 
 #landingpage {
-  background: url('../img/landingpage_background.png') center center fixed;
-  background-size: cover;
+  background: url('../img/landingpage_background.png') no-repeat center center fixed;
+  background-size:  cover;
   height: 90vh; /* vh = viewport height = 100% :) to make the section 100% window height // together with navbar (10vh) and landingpage ociture (90vh)= 100vh*/
+}
+
+#landingpage {
+  position: relative;
+  border: 1px solid transparent;
+}
+
+#landingpage img {
+  position: absolute;
+  top: 20%;
+  left: 35vw; /* centering image -> left + image size (width) = 100vw */
+  width: 30vw; /* image width */
+  min-width: 300px; /* image will have that min width*/
+}
+
+#landingpage_userengagement {
+  color: #EAEFEE;
+  position: absolute;
+  text-align: center;
+  top: 65vh;
+  width: 100%;
 }

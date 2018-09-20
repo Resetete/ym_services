@@ -4,21 +4,22 @@ html, body {  /* should be set to make % sizes work correctly */
 }
 
 body{
-  background-color: #FFFFFF;
+  background-color: #EAEFEE;
   font-family: 'Lato', sans-serif;
 }
 
 p {
-  color: black;
+  color: #253449;
   line-height: 1.4;
 }
 
 h2 {
-
+  color: #253449;
 }
 
 h1 {
-
+  color: #EAEFEE;
+  font-size: calc(60px +0.5vw)
 }
 
 /***** GRID *****/
@@ -67,7 +68,6 @@ header {
   border: 0px;
   margin: 0px;
   padding: 0px;
-  /* position: fixed; /* so that the nav bar is always visible */
   width: 100%; /* to make the nav bar wisth the whole screen */
 }
 
@@ -82,7 +82,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  color: #253449;
   text-decoration: none; /* so that text/links doesn't have an underline */
   font-size: calc(10px + 0.5vw); /* responsive text size with min font size 15x */
   padding-left: 20px;
@@ -114,9 +114,10 @@ header #logo {
 
 #landingpage img {
   position: absolute;
-  top: 20%;
+  top: 10vh;
   left: 35vw; /* centering image -> left + image size (width) = 100vw */
   width: 30vw; /* image width */
+  height: auto;
   min-width: 300px; /* image will have that min width*/
 }
 
@@ -124,6 +125,6 @@ header #logo {
   color: #EAEFEE;
   position: absolute;
   text-align: center;
-  top: 65vh;
+  bottom: 10vh;
   width: 100%;
 }

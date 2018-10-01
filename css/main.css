@@ -128,3 +128,9 @@ header #logo {
   bottom: 10vh;
   width: 100%;
 }
+
+/*********** FOOTER ******/
+
+#chamaeleon_footer {
+ width: 120px;
+}

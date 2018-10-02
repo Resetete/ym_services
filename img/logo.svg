@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="221px" height="178px" viewBox="0 0 221 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo_startpage</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="German_version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Startpage-CC3--v4---GERMAN" transform="translate(-28.000000, 0.000000)">
+            <g id="Logo_startpage" transform="translate(28.000000, 0.000000)">
+                <g id="ym_logo">
+                    <path d="M44.9949391,177.999659 C17.7040239,157.879524 0,125.50726 0,89 C0,52.4923271 17.7044243,20.1197441 44.9958649,-0.000341270946 L176.004135,-0.000341270938 C203.295576,20.1197441 221,52.4923271 221,89 C221,125.50726 203.295976,157.879524 176.005061,177.999659 L44.9949391,177.999659 Z" id="Combined-Shape" fill="#DF9533" fill-rule="nonzero"></path>
+                    <text id="ym" font-family="LeckerliOne-Regular, Leckerli One" font-size="100" font-weight="normal" fill="#EAEFEE">
+                        <tspan x="23" y="106">ym</tspan>
+                    </text>
+                    <text id="Yvonne-Miller" font-family="OpenSans-Bold, Open Sans" font-size="20" font-weight="bold" fill="#B03E56">
+                        <tspan x="70.5" y="131.5">Yvonne Miller</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

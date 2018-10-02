@@ -44,6 +44,21 @@ h1 {
   width: 66%;
 }
 
+.one-fifth-width {
+  float: left;
+  width: 20%;
+}
+
+.two-fifth-width {
+  float: left;
+  width: 40%;
+}
+
+.three-fifth-width {
+  float: left;
+  width: 60%;
+}
+
 .button {
   color: #EAEFEE;
   width: 150px;
@@ -98,11 +113,21 @@ header #logo {
   height: 10vh;
 }
 
+#language_selection {
+  float: right; /* positions the language buttons left from menu */
+  padding-top: 15px;
+}
+
+#language_selection ul li { /* formatting of language selection */
+  display: inline-block;  /*  */
+
+}
+
 
 /***** STARTPAGE *****/
 
 #landingpage {
-  background: url('../img/landingpage_background.png') no-repeat center center fixed;
+  background: url('../img/landingpage_background.png') no-repeat center center;
   background-size:  cover;
   height: 90vh; /* vh = viewport height = 100% :) to make the section 100% window height // together with navbar (10vh) and landingpage ociture (90vh)= 100vh*/
 }
@@ -114,7 +139,7 @@ header #logo {
 
 #landingpage img {
   position: absolute;
-  top: 10vh;
+  bottom: 35vh;
   left: 35vw; /* centering image -> left + image size (width) = 100vw */
   width: 30vw; /* image width */
   height: auto;
@@ -122,11 +147,19 @@ header #logo {
 }
 
 #landingpage_userengagement {
-  color: #EAEFEE;
   position: absolute;
   text-align: center;
   bottom: 10vh;
   width: 100%;
+}
+
+#landingpage_objectives {
+  color: #EAEFEE;
+  position: absolute;
+  text-align: left;
+  bottom: 30vh;
+  width: 100%;
+  padding-left: 50px;
 }
 
 /*********** FOOTER ******/

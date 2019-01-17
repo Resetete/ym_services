@@ -114,16 +114,19 @@ footer {
 }
 
 h1 {
-  font-size: 1em; /* responsize font size */
+  font-size: 1.2em; /* responsize font size */
   margin: 0px;
   padding: 0px;
+  font-weight: 400;
+  color: #EAEFEE;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
   padding: 0px;
   border: 0px;
   margin: 0px;
-  font-size: 1.2em; /* responsize font size */
+  font-size: 1em; /* responsize font size */
   font-weight: 400;
   color: #EAEFEE;
   font-family: 'Open Sans', sans-serif;

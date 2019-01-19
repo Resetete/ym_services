@@ -288,12 +288,12 @@ header nav ul {
 
 header nav ul li {
   list-style: none;
+  padding: 10px 0 10px 7px;
 }
 
 header nav ul li a {
   text-decoration: none;
   color: #253449;
-  padding: 5px 0 5px 5px;
 }
 
 /*----------------------------------------*/
@@ -431,7 +431,8 @@ header nav ul li a {
 @media only screen and (min-width: 768px) {
   /* -------- tablet and desktop styles here   ----------*/
       .hero-image figure {
-          width: 45%; /* set size of the logo on hero image */
+        /*  width: 25vw; /* set size of the logo on hero image */
+          width: 25%; /* set size of the logo on hero image */
       }
 
       a {
@@ -455,7 +456,7 @@ header nav ul li a {
       }
 
       header nav ul li a {
-        padding-left: 10px;
+        padding: 20px 0 20px 10px;
       }
 
       .lang-sel-flag {

@@ -203,7 +203,6 @@ header {
   justify-content: center;
   flex-flow: row wrap;
   padding-bottom: 10px;
-
 }
 
 header .content-wrapper {
@@ -274,9 +273,8 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 60%;
+  width: 75%;
   flex-flow: row nowrap;
-
 }
 
 header nav ul {
@@ -295,7 +293,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #253449;
-  padding: 5px;
+  padding: 5px 0 5px 5px;
 }
 
 /*----------------------------------------*/
@@ -432,10 +430,40 @@ header nav ul li a {
 
 @media only screen and (min-width: 768px) {
   /* -------- tablet and desktop styles here   ----------*/
-
       .hero-image figure {
-        width: 45%; /* set size of the logo on hero image */
+          width: 45%; /* set size of the logo on hero image */
       }
+
+      a {
+        font-size: 1.2em;
+      }
+
+      header .content-wrapper {
+        flex-flow: row nowrap;
+      }
+
+      #logo { /* set size of page logo */
+        width: 11vw;
+      }
+
+      header nav {
+        flex-basis: 60%;
+      }
+
+      .header-divider {
+        flex-basis: 20%;
+      }
+
+      header nav ul li a {
+        padding-left: 10px;
+      }
+
+      .lang-sel-flag {
+        width: 2.3vw; /* width in percentage of the screen */
+        /*min-width: 2em; /* size of language flags */
+      }
+
+
 
 
 }

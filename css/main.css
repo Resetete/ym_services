@@ -305,7 +305,7 @@ header nav ul li a {
 .hero-image {
   background: url('../img/landingpage-background.jpg') center center no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 85vh;
   /*opacity: 0.7;*/
   display: flex;
   align-items: center;
@@ -322,7 +322,7 @@ header nav ul li a {
 }
 
 .hero-image figure {
-  width: 52%;
+  width: 52%; /* set size of the logo on hero image */
 }
 
 .hero-image h1 {
@@ -432,51 +432,12 @@ header nav ul li a {
 
 @media only screen and (min-width: 768px) {
   /* -------- tablet and desktop styles here   ----------*/
-      header .content-wrapper-header {
-        flex-flow: row nowrap;
-        padding: 20px 0;
+
+      .hero-image figure {
+        width: 45%; /* set size of the logo on hero image */
       }
 
-      header figure {
-        width: 15%; /* sets size of figure / logo */
-        padding-top: 0;
-      }
 
-      header nav ul {
-        flex-flow: row nowrap; /* nav bar items are placed next to each other  */
-      }
-
-      header nav ul li {
-        display: flex;
-        align-items: center ;
-        justify-content: space-around;
-        flex-flow: row nowrap;
-        padding: 0 0.3em 0 0.3em; /* spreads the nav bar items */
-      }
-
-      .start-section {
-        background: url('../img/background-foto-forest.jpg') center center repeat fixed;
-      }
-
-      #work-section {
-        background: url('../img/work-water-from-space-background.jpg') center center no-repeat fixed;
-      }
-
-      #about-section {
-        background: url('../img/background-services-water-from-space.jpg') center center no-repeat fixed;
-      }
-
-      #services-section {
-        background: url('../img/background-contact.jpg') center top no-repeat fixed;
-      }
-
-      #contact-section {
-        background: url('../img/background-about-water-from-space.jpg') center center no-repeat fixed;
-      }
-
-      footer {
-         background: url('../img/background_lastpic.jpg') center center no-repeat fixed;
-      }
 }
 
 

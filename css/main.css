@@ -171,7 +171,8 @@ hr {
 
 /*-- button styling --*/
 .btn {
-  width: 25vw;
+  width: 20vw;
+  /*max-width: 100px;*/
   height: 4.5vh; /* 54px height on desktop -> cs. 4.5% of screen height */
   color: #EAEFEE;
   border: none;
@@ -322,7 +323,7 @@ header nav ul li a {
 }
 
 .hero-image figure {
-  width: 40%;
+  width: 52%;
 }
 
 .hero-image h1 {

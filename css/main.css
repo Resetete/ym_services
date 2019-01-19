@@ -342,6 +342,49 @@ header nav ul li a {
 }
 
 
+/*----------------------------------------*/
+/*------ WELCOMING SECTION ---------------*/
+/*----------------------------------------*/
+
+.welcoming {
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcoming .content-wrapper {
+  padding: 50px 0;
+  flex-flow: row wrap-reverse;
+}
+
+.highlight-text {
+  /*color: #B03E56;*/ /* needed if design default */
+  color: white; /* not needed if design default */
+  padding: 3px 2px; /* not needed if design default */
+  margin-right: 2px; /* not needed if design default */
+  opacity: 0.9; /* not needed if design default */
+  background-color: #B03E56; /* not needed if design default */
+  font-weight: bold;
+}
+
+.welcoming p {
+  color: #253449;
+  padding-right: 40px; /* space between text and portrait */
+}
+
+.welcoming figure {
+  width: 40%;
+}
+
+.welcoming img {
+  background: transparent;
+}
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -464,8 +507,15 @@ header nav ul li a {
         /*min-width: 2em; /* size of language flags */
       }
 
+      /*------ welcoming section -----*/
+      .welcoming .content-wrapper {
+        padding: 90px 0;
+        flex-flow: row nowrap;
+      }
 
-
+      .welcoming figure {
+        width: 60%;
+      }
 
 }
 

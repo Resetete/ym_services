@@ -273,7 +273,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 80%;
+  width: 75%;
   flex-flow: row nowrap;
 }
 
@@ -293,7 +293,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #253449;
-  padding: 5px;
+  padding: 5px 0 5px 5px;
 }
 
 /*----------------------------------------*/
@@ -451,7 +451,7 @@ header nav ul li a {
       }
 
       header nav ul li a {
-        padding: 10px;
+        padding-left: 10px;
       }
 
       .lang-sel-flag {

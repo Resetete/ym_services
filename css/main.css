@@ -453,6 +453,39 @@ header nav ul li a {
 }
 
 
+/*------ FOOTER -----------*/
+footer {
+  background-color: #EEA231;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+footer .footer-container figure {
+  padding-left: 2px;
+  width: 5%;
+}
+
+#chamaeleon-footer-brand {
+  -webkit-filter: grayscale(100%) brightness(220%);
+  filter: grayscale(100%) brightness(220%);
+}
+
+footer p {
+  font-size: 0.5em;
+}
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

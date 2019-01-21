@@ -127,7 +127,7 @@ h2 {
   border: 0px;
   margin: 0px;
   font-size: 1em; /* responsize font size */
-  font-weight: 400;
+  font-weight: 600;
   color: #EAEFEE;
   font-family: 'Open Sans', sans-serif;
 }
@@ -143,6 +143,13 @@ p {
 a {
   font-family: 'Open Sans', sans-serif;
 }
+
+/*----- TEXT highlighter -------*/
+.highlight-text-bold {
+  font-weight: 600;
+}
+
+/*----- figure settings -------*/
 
 img {
   width: 100%;
@@ -381,8 +388,69 @@ header nav ul li a {
   background: transparent;
 }
 
+/*-------------------------------*/
+/*-------- SERVICES SECTION -----*/
+/*-------------------------------*/
+
+.services-section {
+  background-color: #253449;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-section h2 {
+  color: #3FB5AD;
+}
 
 
+.services-section .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* text left align */
+  flex-flow: column;
+}
+
+.services-detail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* lets the background boxes stretch whole container */
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.services-item {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  flex-flow: column;
+  background-color: #F2F2F2;
+  border-radius: 35px; /* makes the background box round corners */
+  margin: 5px;
+  padding: 10px;
+}
+
+.services-item figure {
+  width: 20%; /* scale the icon size */
+  padding: 10px 0;
+}
+
+.services-item p {
+  color: #253449;
+  text-align: center;
+  margin: 0;
+}
+
+.add-spacer { /* adds a padding to end of word */
+  padding-right: 3px;
+}
+
+.text-wrapper { /* lets text write next to each other */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
 
 /* ==========================================================================
@@ -482,6 +550,10 @@ header nav ul li a {
         font-size: 1.2em;
       }
 
+      header {
+        padding-bottom: 0;
+      }
+
       header .content-wrapper {
         flex-flow: row nowrap;
       }
@@ -516,6 +588,21 @@ header nav ul li a {
       .welcoming figure {
         width: 60%;
       }
+
+      /*------- services section --------*/
+
+
+      .services-item {
+        width: 15vw; /* width of service boxes */
+        padding: 30px 10px;
+      }
+
+      .services-item figure {
+        width: 30%; /* scale the icon size */
+        padding-top: 30px;
+      }
+
+
 
 }
 

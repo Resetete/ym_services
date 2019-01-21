@@ -3,7 +3,7 @@ $(document).ready(function()
 
 //var testemonies = {};
 
-var listOfTestemonies = ["Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna.","Great experience!","Quis iaculis nulla iaculis vitae.","perfect", "super services and quick"];
+var listOfTestemonies = ["0 Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna.","1 Great experience!","2 Quis iaculis nulla iaculis vitae.","3 perfect", "4 super services and quick"];
 console.log("Number of testemonies: " + listOfTestemonies.length)
 var i=0;
 console.log("current i: "+i)
@@ -27,16 +27,28 @@ var slideLeft = function() {
 
 var slideRight = function() {
   // change p content with the list element of listOfTestemonies
-      var selection = testemonies.listOfTestemonies[i];
-      console.log(selection);
-      $("#testemonial-content").text( selection );
-      i=i+1;
+      if (i>=0 && i<(listOfTestemonies.length))
+      {
+          var selection = listOfTestemonies[i];
+          console.log("length list:" + listOfTestemonies.length);
+          $("#testemonial-content").text( selection );
+          i=i+1;
+          console.log("i is: "+i +" "+selection);
+      } else if (i>listOfTestemonies.length-1){
+          i=i-(listOfTestemonies.length-1);
+          console.log("check" + "new i: " + i)
+          var selection = listOfTestemonies[i-1];
+          console.log("i larger: "+i+" "+selection);
+          $("#testemonial-content").text( selection );
+      }
 };
 
-
-
+// moves testimonals to the left
 $("#triangle-left").click(slideLeft);
-
+// moves testimonals to the right
 $("#triangle-right").click(slideRight);
+
+// sets the initial first testemonial on website
+$("#testemonial-content").text( listOfTestemonies[1]);
 
 }); // end js document

@@ -486,7 +486,7 @@ header nav ul li a {
   text-align: center;
 }
 
-.triangle-right {
+#triangle-right {
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
@@ -495,7 +495,7 @@ header nav ul li a {
   margin-left: 10px;
 }
 
-.triangle-left {
+#triangle-left {
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
@@ -504,7 +504,9 @@ header nav ul li a {
   margin-right: 10px;
 }
 
-
+.font-client {
+  font-weight: 600;
+}
 
 /*------ FOOTER -----------*/
 footer {

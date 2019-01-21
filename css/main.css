@@ -452,6 +452,34 @@ header nav ul li a {
   flex-flow: row wrap;
 }
 
+/*-------- Testemonie Section --------------*/
+
+.testimonial-section {
+  background-color: #EAEFEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-section .content-wrapper {
+  flex-flow: column;
+}
+
+.testemonie-pic {
+  background: transparent;
+  width: 15vw;
+}
+
+.testemonie-text { /* background box with testionial text */
+  background-color: #B03E56;
+  border-radius: 30px;
+  width: 60vw; /*30vw for desktop*/
+  margin: 20px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+
 
 /*------ FOOTER -----------*/
 footer {

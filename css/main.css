@@ -114,7 +114,7 @@ footer {
 }
 
 h1 {
-  font-size: 1.2em; /* responsize font size */
+  font-size: 1.3em; /* responsize font size */
   margin: 0px;
   padding: 0px;
   font-weight: 400;
@@ -126,7 +126,7 @@ h2 {
   padding: 0px;
   border: 0px;
   margin: 0px;
-  font-size: 1em; /* responsize font size */
+  font-size: 1.2em; /* responsize font size */
   font-weight: 600;
   color: #EAEFEE;
   font-family: 'Open Sans', sans-serif;
@@ -413,7 +413,7 @@ header nav ul li a {
 
 .services-detail-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch; /* lets the background boxes stretch whole container */
   flex-flow: row wrap;
   width: 100%;
@@ -507,6 +507,55 @@ header nav ul li a {
 .font-client {
   font-weight: 600;
 }
+
+/*------- About me section --------*/
+
+.about-me {
+  background-color: #3FB5AD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me .content-wrapper {
+  flex-flow: column;
+}
+
+.about-me .content-wrapper h2 {
+  padding-bottom: 20px;
+}
+
+.hard-facts-item figure {
+  mix-blend-mode: darken;
+  width: 15%;
+  margin: 10px;
+}
+
+.hard-facts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.hard-facts-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.text-wrapper {
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hard-facts-item p {
+  margin: 0;
+  padding: 0;
+}
+
 
 /*------ FOOTER -----------*/
 footer {

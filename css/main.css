@@ -190,6 +190,7 @@ hr {
   border-radius: 4px; /* to make round corners */
   padding: 0.7em 1.3em;
   margin: 0.5em;
+  width: 45%;
 }
 
 .btn-first-level {
@@ -599,6 +600,31 @@ header nav ul li a {
   margin: 0;
   padding: 0;
 }
+
+/*---- questions section ----*/
+.questions-sec {
+  background-color: #EAEFEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questions-sec .content-wrapper {
+  flex-flow: column;
+}
+
+.questions-sec .content-wrapper h2 {
+  color: #253449;
+  line-height: 1.5;
+}
+
+#send-direct-email a {
+  list-style: none;
+  text-decoration: none;
+  color: #EAEFEE;
+}
+
+
 /*------ FOOTER -----------*/
 footer {
   background-color: #EEA231;

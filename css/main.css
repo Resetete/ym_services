@@ -470,7 +470,9 @@ header nav ul li a {
   width: 100%;
 }
 
+/*------------------------------------------*/
 /*-------- Testemonie Section --------------*/
+/*------------------------------------------*/
 
 .testimonial-section {
   background-color: #EAEFEE;
@@ -541,8 +543,8 @@ header nav ul li a {
     background: #EEA231;
     -webkit-clip-path: polygon(66.18% 44.14%,64.24% 51.95%,62.52% 59.45%,59.85% 66.95%,56.56% 74.15%,53.06% 82.11%,48.73% 88.84%,44.19% 94.96%,39.24% 101.07%,75.56% 100.45%,83.56% 90.39%,91.35% 79.08%,96.02% 69.94%,100.07% 58.64%,101.39% -1.38%,59.24% -1.69%,63.26% 6.60%,66.46% 15.21%,67.99% 27.20%,67.92% 35.67%);
     clip-path: polygon(66.18% 44.14%,64.24% 51.95%,62.52% 59.45%,59.85% 66.95%,56.56% 74.15%,53.06% 82.11%,48.73% 88.84%,44.19% 94.96%,39.24% 101.07%,75.56% 100.45%,83.56% 90.39%,91.35% 79.08%,96.02% 69.94%,100.07% 58.64%,101.39% -1.38%,59.24% -1.69%,63.26% 6.60%,66.46% 15.21%,67.99% 27.20%,67.92% 35.67%);
-    height: 600px;
-    width: 450px;
+    height: 350px;
+    width: 350px;
     right: -5vw;
     top: 0px;
     z-index: -100; /* makes sure that the shape is kept in the background -> the other section should have z-index=1 */
@@ -650,10 +652,14 @@ header nav ul li a {
 .soft-facts-item button {
   margin-top: 50px;
 }
+/*------------------------------------------*/
+/*------------ questions section -----------*/
+/*------------------------------------------*/
 
-/*---- questions section ----*/
 .questions-sec {
   background-color: #EAEFEE;
+  background: url('../img/questions-sec-background-mobile.svg') top no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -860,6 +866,7 @@ footer p {
       }
 
       /*------ welcoming section -----*/
+
       .welcoming .content-wrapper {
         padding: 90px 0;
         flex-flow: row nowrap;
@@ -868,6 +875,14 @@ footer p {
       .welcoming figure {
         width: 60%;
       }
+
+      /*------- testionial section ----- */
+
+      /*create a costume shape */
+      #bd-shape {
+          height: 600px;
+          width: 450px;
+        }
 
       /*------- services section --------*/
 
@@ -889,6 +904,12 @@ footer p {
 
       .soft-facts {
         width: 48%;
+      }
+
+      /*---------Question sec ------*/
+      .questions-sec {
+        background: url('../img/questions-sec-background-desktop.svg') top no-repeat;
+        background-size: cover;
       }
 
       /*------- Footer -------*/

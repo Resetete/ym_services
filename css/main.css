@@ -378,6 +378,7 @@ header nav ul li a {
 .welcoming .content-wrapper {
   padding: 50px 0;
   flex-flow: row wrap-reverse;
+  position: relative; /* needed to locate the shape #polygon-shape-circle*/
 }
 
 .highlight-text {
@@ -402,6 +403,36 @@ header nav ul li a {
 .welcoming img {
   background: transparent;
 }
+
+/* shape on about section */
+.shape-wrapper {
+  position: absolute;
+  z-index: 2;
+}
+
+#polygon-shape-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 20px 40px 0 0 #EEA231;
+  transform: rotate(80deg);
+  position: relative; /* locate the shape */
+  top: 170px;
+  left: -130px;
+}
+
+#polygon-shape-circle::after {
+  content:"";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 10px 20px 0 0 #EEA231;
+  transform: rotate(180deg);
+  left: 50%;
+  top: 70%;
+  position: absolute; /* locate the shape */
+}
+
 
 /*-------------------------------*/
 /*-------- SERVICES SECTION -----*/

@@ -338,9 +338,18 @@ header nav ul li a {
 
 .hero-image h1 {
   font-weight: 600;
-  text-shadow: 1px 1px black;
-
+  text-shadow: 1px 1px black; /* increase readability */
+  margin: 0;
 }
+
+.text-wrapper-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+
 /* styling buttons on hero image  */
 .user-engagement {
   width: 90%;
@@ -403,6 +412,7 @@ header nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .services-section h2 {
@@ -415,6 +425,7 @@ header nav ul li a {
   justify-content: center;
   align-items: flex-start; /* text left align */
   flex-flow: column;
+  z-index: 1;
 }
 
 .services-detail-wrapper {
@@ -443,7 +454,7 @@ header nav ul li a {
 
 .services-item p {
   color: #253449;
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
@@ -456,6 +467,7 @@ header nav ul li a {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 /*-------- Testemonie Section --------------*/
@@ -465,15 +477,19 @@ header nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 0;
 }
 
 .testimonial-section .content-wrapper {
   flex-flow: column;
+  position: relative;
+  z-index: 1;
 }
 
 .testemonie-pic {
   background: transparent;
   width: 15vw;
+  z-index: 1;
 }
 
 .slider-wrapper {
@@ -481,6 +497,7 @@ header nav ul li a {
   align-items: center;
   justify-content: center;
   flex-flow: row nowrap;
+  z-index: 1;
 }
 
 .testemonie-text { /* background box with testionial text */
@@ -490,6 +507,7 @@ header nav ul li a {
   margin: 20px 0;
   padding: 10px;
   text-align: center;
+  z-index: 1;
 }
 
 #triangle-right {
@@ -499,6 +517,7 @@ header nav ul li a {
   border-left: 20px solid #B03E56;
   border-bottom: 10px solid transparent;
   margin-left: 10px;
+  z-index:1;
 }
 
 #triangle-left {
@@ -508,19 +527,45 @@ header nav ul li a {
   border-right: 20px solid #B03E56;
   border-bottom: 10px solid transparent;
   margin-right: 10px;
+  z-index: 1;
 }
 
 .font-client {
   font-weight: 600;
 }
 
+
+
+/*create a costume shape */
+#bd-shape {
+    background: #EEA231;
+    -webkit-clip-path: polygon(66.18% 44.14%,64.24% 51.95%,62.52% 59.45%,59.85% 66.95%,56.56% 74.15%,53.06% 82.11%,48.73% 88.84%,44.19% 94.96%,39.24% 101.07%,75.56% 100.45%,83.56% 90.39%,91.35% 79.08%,96.02% 69.94%,100.07% 58.64%,101.39% -1.38%,59.24% -1.69%,63.26% 6.60%,66.46% 15.21%,67.99% 27.20%,67.92% 35.67%);
+    clip-path: polygon(66.18% 44.14%,64.24% 51.95%,62.52% 59.45%,59.85% 66.95%,56.56% 74.15%,53.06% 82.11%,48.73% 88.84%,44.19% 94.96%,39.24% 101.07%,75.56% 100.45%,83.56% 90.39%,91.35% 79.08%,96.02% 69.94%,100.07% 58.64%,101.39% -1.38%,59.24% -1.69%,63.26% 6.60%,66.46% 15.21%,67.99% 27.20%,67.92% 35.67%);
+    height: 400px;
+    width: 350px;
+    right: -5vw;
+    top: 0px;
+    z-index: -100; /* makes sure that the shape is kept in the background -> the other section should have z-index=1 */
+    float: left; /* needed so that the polygon clipping works */
+    position: absolute; /* needed to adjust the position of the polygon within the container (should be the content-wrapper, there position=relative) */
+  }
+
+
+
+
+
+/*---------------------------------*/
 /*------- About me section --------*/
+/*---------------------------------*/
+
 
 .about-me {
   background-color: #3FB5AD;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative; /* needed so that the background polygon from the section before stays in the back */
+  z-index: 1; /* neded to keep the elements on top of the background polygon */
 }
 
 .about-me .content-wrapper {
@@ -541,7 +586,8 @@ header nav ul li a {
 .text-wrapper {
     width: 50%;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start;  z-index: 100;
+
 }
 
 .hard-facts {
@@ -601,12 +647,20 @@ header nav ul li a {
   padding: 0;
 }
 
+.soft-facts-item button {
+  margin-top: 50px;
+}
+
 /*---- questions section ----*/
 .questions-sec {
   background-color: #EAEFEE;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.questions-sec h2 {
+  padding-bottom: 70px;
 }
 
 .questions-sec .content-wrapper {
@@ -628,6 +682,22 @@ header nav ul li a {
 /*------ FOOTER -----------*/
 footer {
   background-color: #EEA231;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+
+footer .content-wrapper {
+  flex-flow: column;
+  padding: 25px 0;
+}
+
+footer .content-wrapper a {
+  text-decoration: none;
+  color: #F2F2F2;
+  font-size: 1em;
 }
 
 .footer-container {
@@ -743,6 +813,11 @@ footer p {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (orientation: landscape) {
+  hr {
+      margin: 0.3em 0;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   /* -------- tablet and desktop styles here   ----------*/
@@ -814,6 +889,13 @@ footer p {
 
       .soft-facts {
         width: 48%;
+      }
+
+      /*------- Footer -------*/
+
+      footer .footer-container figure {
+        padding-left: 2px;
+        width: 3%;
       }
 
 }

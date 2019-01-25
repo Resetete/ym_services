@@ -877,6 +877,10 @@ footer p {
         width: 25%;
       }
 
+      hr {
+        margin: 1em 0;
+      }
+
       .nav-bars {
         justify-content: flex-end;
       }
@@ -887,7 +891,7 @@ footer p {
 
       .hero-image figure {
         /*  width: 25vw; /* set size of the logo on hero image */
-          width: 25%; /* set size of the logo on hero image */
+          width: 30%; /* set size of the logo on hero image */
       }
 
       a {

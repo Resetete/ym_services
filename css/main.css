@@ -503,7 +503,7 @@ header nav ul li a {
   padding-right: 3px;
 }
 
-.text-wrapper { /* lets text write next to each other */
+.text-wrapper-services { /* lets text write next to each other */
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -631,7 +631,7 @@ header nav ul li a {
 
 .text-wrapper {
     width: 50%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     z-index: 100;
 }

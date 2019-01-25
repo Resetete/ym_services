@@ -631,7 +631,7 @@ header nav ul li a {
 
 .text-wrapper {
     width: 50%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     z-index: 100;
 }

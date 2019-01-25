@@ -218,7 +218,7 @@ header {
   padding-bottom: 10px;
   position: sticky; /* to make header fixed (use for desktop and tablet only) */
   top: 0px; /* required to make the header stick to top */
-  background-color: rgba(242,242,242,0.9); /* background color for the header with transparency*/
+  background-color: rgba(242,242,242,0.95); /* background color for the header with transparency*/
   z-index: 999;
 }
 

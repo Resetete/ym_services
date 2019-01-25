@@ -1000,6 +1000,14 @@ footer p {
           margin: 1em 0;
       }
 
+      .btn {
+        width: 25%;
+      }
+
+      #testimonal-button {
+        width: 40%;
+      }
+
       .hero-image figure {
         /*  width: 25vw; /* set size of the logo on hero image */
           width: 25%; /* set size of the logo on hero image */

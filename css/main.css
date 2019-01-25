@@ -874,6 +874,10 @@ footer p {
 @media only screen and (min-width: 768px) {
   /* -------- tablet styles here   ----------*/
 
+      .btn {
+        width: 25%;
+      }
+
       .hero-image {
         height: 95vh;
       }
@@ -968,6 +972,11 @@ footer p {
         width: 8vw;
       }
 
+
+
+      #testimonal-button {
+        width: 55%;
+      }
 
 
       /*--- about me section ---*/

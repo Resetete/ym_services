@@ -878,6 +878,10 @@ footer p {
         width: 25%;
       }
 
+      .nav-bars {
+        justify-content: flex-end;
+      }
+
       .hero-image {
         height: 95vh;
       }

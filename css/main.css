@@ -1017,16 +1017,11 @@ footer p {
       }
 
       .btn {
-        width: 25%;
+        width: 20%;
       }
 
       #testimonal-button {
         width: 40%;
-      }
-
-      .hero-image figure {
-        /*  width: 25vw; /* set size of the logo on hero image */
-          width: 25%; /* set size of the logo on hero image */
       }
 
       a {
@@ -1060,6 +1055,15 @@ footer p {
       .lang-sel-flag {
         width: 2.3vw; /* width in percentage of the screen */
         /*min-width: 2em; /* size of language flags */
+      }
+
+      /*--- Hero section ------*/
+      .hero-image figure {
+        width: 25%; /* set size of the logo on hero image */
+      }
+
+      .user-engagement button {
+        margin: 0 4vw;
       }
 
       /*------ welcoming section -----*/

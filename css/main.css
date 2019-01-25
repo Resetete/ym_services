@@ -227,6 +227,14 @@ header .content-wrapper {
   padding: 0;
 }
 
+.nav-bars { /* includes language selector and nav bar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
 #logo { /* set size of page logo */
   width: 30%;
 }
@@ -285,8 +293,9 @@ header .content-wrapper {
 header nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 75%;
+  justify-content: center;
+  /*width: 75%;*/
+  padding-left: 10px;
   flex-flow: row nowrap;
 }
 
@@ -497,9 +506,11 @@ header nav ul li a {
 .text-wrapper { /* lets text write next to each other */
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-flow: column;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /*------------------------------------------*/
@@ -532,6 +543,7 @@ header nav ul li a {
   justify-content: center;
   flex-flow: row nowrap;
   z-index: 1;
+  /*width: 60vw;*/
 }
 
 .testemonie-text { /* background box with testionial text */
@@ -852,20 +864,27 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (orientation: landscape) {
-  hr {
+  /*-------------- Landscape device orientation stlyes ---------*/
+
+  hr { /* puts the objectives on hero image narrower */
       margin: 0.3em 0;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* -------- tablet and desktop styles here   ----------*/
+  /* -------- tablet styles here   ----------*/
+
+      .hero-image {
+        height: 95vh;
+      }
+
       .hero-image figure {
         /*  width: 25vw; /* set size of the logo on hero image */
           width: 25%; /* set size of the logo on hero image */
       }
 
       a {
-        font-size: 1.2em;
+        font-size: 1em;
       }
 
       header {
@@ -880,8 +899,130 @@ footer p {
         width: 11vw;
       }
 
-      header nav {
-        flex-basis: 60%;
+      .header-divider {
+        flex-basis: 20%;
+      }
+
+      header nav ul li a {
+        padding: 20px 0 20px 10px;
+      }
+
+      .lang-sel-flag {
+        width: 2.3vw; /* width in percentage of the screen */
+        /*min-width: 2em; /* size of language flags */
+      }
+
+      /*------ welcoming section -----*/
+
+      .welcoming .content-wrapper {
+        padding: 90px 0;
+        flex-flow: row nowrap;
+      }
+
+      .welcoming figure {
+        width: 60%;
+      }
+
+      #polygon-shape-circle {
+          top: 120px;
+      }
+
+
+      /*------- testionial section ----- */
+
+      /*create a costume shape */
+      #bd-shape {
+          height: 600px;
+          width: 450px;
+        }
+
+      .testemonie-text { /* background box with testionial text */
+          width: 40vw; /*30vw for desktop*/
+        }
+
+      /*------- services section --------*/
+
+
+      .services-item {
+        width: 20vw; /* width of service boxes */
+        padding: 30px 10px;
+      }
+
+      .services-item figure {
+        width: 30%; /* scale the icon size */
+        padding-top: 30px;
+      }
+
+      .services-item p {
+        text-align: left;
+      }
+
+      /*---- testimonial ---*/
+      /* costume shape */
+      #bd-shape {
+        height: 450px;
+        width: 350px;
+        }
+
+      .testemonie-pic {
+        width: 8vw;
+      }
+
+
+
+      /*--- about me section ---*/
+      .hard-facts {
+        width: 48%;
+      }
+
+      .soft-facts {
+        width: 48%;
+      }
+
+      /*---------Question sec ------*/
+      .questions-sec {
+        background: url('../img/questions-sec-background-desktop.svg') top no-repeat;
+        background-size: cover;
+      }
+
+      /*------- Footer -------*/
+
+      footer .footer-container figure {
+        padding-left: 2px;
+        width: 3%;
+      }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /* -------- Desktop styles here   ----------*/
+      hr { /* puts the objectives on hero image narrower */
+          margin: 1em 0;
+      }
+
+      .hero-image figure {
+        /*  width: 25vw; /* set size of the logo on hero image */
+          width: 25%; /* set size of the logo on hero image */
+      }
+
+      a {
+        font-size: 0.8em;
+      }
+
+      header {
+        padding-bottom: 0;
+      }
+
+      header .content-wrapper {
+        flex-flow: row nowrap;
+      }
+
+      #logo { /* set size of page logo */
+        width: 11vw;
+      }
+
+      .nav-bars {
+        justify-content: flex-end;
       }
 
       .header-divider {
@@ -912,9 +1053,13 @@ footer p {
 
       /*create a costume shape */
       #bd-shape {
-          height: 600px;
+          height: 500px;
           width: 450px;
-        }
+      }
+
+      .testemonie-text { /* background box with testionial text */
+          width: 40vw;
+      }
 
       /*------- services section --------*/
 
@@ -952,8 +1097,6 @@ footer p {
       }
 
 }
-
-
 
 /* ==========================================================================
    Print styles.

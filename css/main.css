@@ -394,13 +394,13 @@ header nav ul li a {
   position: relative; /* needed to locate the shape #polygon-shape-circle*/
 }
 
-.highlight-text {
-  /*color: #B03E56;*/ /* needed if design default */
-  color: white; /* not needed if design default */
-  padding: 3px 2px; /* not needed if design default */
-  margin-right: 2px; /* not needed if design default */
-  opacity: 0.9; /* not needed if design default */
-  background-color: #B03E56; /* not needed if design default */
+.highlight-text { /* default or contrast design for text highlight */
+  color: #B03E56; /* needed if design default */
+  /*color: white; /* not needed if design default */
+  /*padding: 3px 2px; /* not needed if design default */
+  /*margin-right: 2px; /* not needed if design default */
+  /*opacity: 0.9; /* not needed if design default */
+  /*background-color: #B03E56; /* not needed if design default */
   font-weight: bold;
 }
 

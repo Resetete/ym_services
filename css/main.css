@@ -464,13 +464,14 @@ header nav ul li a {
 
 .services-section h2 {
   color: #3FB5AD;
+  padding-bottom: 30px;
 }
 
 
 .services-section .content-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* text left align */
+  align-items: center; /* center align h2  */
   flex-flow: column;
   z-index: 1;
 }

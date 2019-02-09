@@ -779,11 +779,31 @@ footer p {
   font-size: 0.7em;
 }
 
+/*------ Imprint --------*/
 
+#impressum a {
+  text-decoration: none;
+  color: inherit;
+}
 
+.impressum-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height:65vh;
+}
 
+.impressum-section address {
+  padding: 50px 0;
+}
 
+.impressum-section address p {
+  color: black;
+}
 
+.impressum-section address h2 {
+  color: #3FB5AD;
+}
 
 /* ==========================================================================
    Helper classes

@@ -493,6 +493,7 @@ header nav ul li a {
   border-radius: 35px; /* makes the background box round corners */
   margin: 5px;
   padding: 10px;
+  min-height: 9em; /* keeps the service boxes height similar */
 }
 
 .services-item figure {

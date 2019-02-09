@@ -474,6 +474,7 @@ header nav ul li a {
   align-items: center; /* center align h2  */
   flex-flow: column;
   z-index: 1;
+  padding: 5em 0;
 }
 
 .services-detail-wrapper {

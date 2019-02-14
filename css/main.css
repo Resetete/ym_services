@@ -419,6 +419,20 @@ header nav ul li a {
   transform: scaleX(-1);
 }
 
+/* button in introduction section */
+#send-direct-email-introduction a {
+  list-style: none;
+  text-decoration: none;
+  color: #EAEFEE;
+}
+
+#send-direct-email-introduction {
+  margin: 0;
+  z-index: 10;
+  position: relative; /* assures that the botton is always in front of other elements */
+}
+
+
 /* shape on about section */
 .shape-wrapper {
   position: absolute;

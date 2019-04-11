@@ -820,6 +820,47 @@ footer p {
   color: #3FB5AD;
 }
 
+
+/*===================================*/
+/*========= About me PAGE ==========*/
+/*===================================*/
+.about-me-website {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+
+.abme-item-wrapper figure {
+  width: 7%;
+  padding-right: 10px;
+}
+
+/* setting the styles for the more about me PAGE */
+.about-me-website h1, p {
+  color: black;
+}
+
+/* style the div box content */
+.abme-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+.about-me-website a {
+  text-decoration: none;
+}
+
+/* style format of div shape - round corner */
+.div-shape {
+  border: 1px solid #EEA231;
+  border-radius: 10px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

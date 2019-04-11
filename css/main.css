@@ -877,6 +877,31 @@ footer p {
   margin: 10px;
 }
 
+/*=======================================*/
+/*========== TIMELINE PAGE ==============*/
+/*=======================================*/
+
+.timeline-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.languages-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

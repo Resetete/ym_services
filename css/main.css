@@ -839,6 +839,7 @@ footer p {
   min-width: 50px; /* to avoid that the symbols become too small*/
 }
 
+
 /* setting the styles for the more about me PAGE */
 .about-me-website h1, p {
   color: black;
@@ -860,6 +861,11 @@ footer p {
   flex-flow: row nowrap;
   padding: 0 10%;
 }
+
+.div-shape:hover {
+  background-color: #EEA231;
+}
+
 
 .abme-item-wrapper p {
   width: 70%;

@@ -888,6 +888,160 @@ footer p {
   flex-flow: column;
 }
 
+/*----------- Timeline styles ------------------*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+.timeline { /* the vertical timeline ruler */
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px; /*to make the vertical line longer as the content boxes */
+}
+
+.timeline::after { /* the vertical timeline ruler */
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #253449;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  /*margin-left: -3px;*/
+}
+
+/* container around the content */
+.container {
+  position: relative;
+  background-color: inherit; /*#EEA231;*/
+  width: 50%;
+  padding: 10px 40px;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -15px;
+  background-color: #253449;
+  border: 4px solid #253449;
+  top: 55px;
+  border-radius: 50%; /* to make them circle */
+  z-index: 1;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -14px;
+}
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -14px;
+}
+
+
+/* Place the left container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 70px;
+    width: 30px;
+    z-index: 1;
+    right: 0px;
+    border: 1px dashed black;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: '';
+  height: 0;
+  position: absolute;
+  top: 70px;
+  width: 30px;
+  z-index: 1;
+  left: 0px;
+  border: 1px dashed black;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #EEA231;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* styling text in content boxes */
+.content h2 {
+  color: #B03E56;
+}
+
+.content p, time {
+  color: #F2F2F2;
+}
+
+.time {
+  font-weight: bold;
+}
+
+/* style intro item */
+#intro {
+  background-color: transparent;
+}
+
+
+/* Add arrows to the right container (pointing left) */
+#intro .right::before {
+  content: '';
+  height: 0;
+  position: absolute;
+  top: 100px;
+  width: 30px;
+  z-index: 1;
+  left: 0px;
+  border: 1px dashed black;
+}
+
+#intro h1 {
+  color: #3FB5AD;
+}
+
+/* style time bubbles */
+.time-bubble {
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  display: flex; /* to center the text within bubble */
+  align-items: center;
+  justify-content: center;
+  background-color: #253449; /* bubble color */
+}
+
+.time-bubble time {
+  color: #3FB5AD; /* container color */
+  font-size: 1.5em;
+}
+
+/*---------- Languages section  --------------*/
+
 .languages-wrapper {
   display: flex;
   justify-content: center;
@@ -895,6 +1049,7 @@ footer p {
   flex-flow: column;
   background: #3FB5AD;
   width: 100%;
+  margin-top: 50px; /* get space between the timeline and langauge section */
 }
 
 .lang-content-wrapper {

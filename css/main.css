@@ -1105,7 +1105,7 @@ footer p {
 .lang-content-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: column;
   padding: 10px 0 50px 0;
 }

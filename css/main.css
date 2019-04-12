@@ -836,6 +836,7 @@ footer p {
 .abme-item-wrapper figure {
   width: 10%;
   padding-right: 10px;
+  min-width: 50px; /* to avoid that the symbols become too small*/
 }
 
 /* setting the styles for the more about me PAGE */

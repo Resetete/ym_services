@@ -886,6 +886,7 @@ footer p {
   align-items: center;
   justify-content: center;
   flex-flow: column;
+  width: 100%;
 }
 
 /*----------- Timeline styles ------------------*/
@@ -894,7 +895,6 @@ footer p {
 * {
   box-sizing: border-box;
 }
-
 
 
 .timeline { /* the vertical timeline ruler */
@@ -915,16 +915,14 @@ footer p {
   background-color: #253449;
   top: 0;
   bottom: 0;
-  left: 50%;
-  /*margin-left: -3px;*/
+  left: 31px; /* desktop: 50%*/
 }
 
 /* container around the content */
-.container {
-  position: relative;
-  background-color: inherit; /*#EEA231;*/
-  width: 50%;
-  padding: 10px 40px;
+.container { /* fullwidth container */
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
 }
 
 /* The circles on the timeline */
@@ -941,32 +939,20 @@ footer p {
   z-index: 1;
 }
 
-/* Fix the circle for containers on the right side */
+
+.left::after,
 .right::after {
-  left: -14px;
+  left: 15px;
 }
 
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -14px;
-}
-
-
-/* Place the left container to the left */
-.left {
+/* make all right containers behave like the left ones */
+.right {
   left: 0;
 }
 
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-
 /* Place the bubble container to the right */
 .left-bubble {
-  right: -22%;
+  right: -142px;
 }
 
 
@@ -1030,7 +1016,7 @@ footer p {
   position: relative;
   background-color: inherit; /*#EEA231;*/
   width: 50%;
-  padding: 0px 70px;
+  padding: 0px 0px;
   margin-bottom: 30px;
 }
 
@@ -1048,12 +1034,12 @@ footer p {
   z-index: 1;
 }
 
-.intro-dash::before {
+.intro-dash::before { /* the dashed line */
   content: '';
   height: 0;
   position: absolute;
   top: 100px;
-  width: 280px;
+  width: 180px;
   z-index: 1;
   left: 0px;
   border: 0.5px dashed black;
@@ -1425,6 +1411,47 @@ footer p {
       footer .footer-container figure {
         padding-left: 2px;
         width: 3%;
+      }
+
+      /*--------------------------------*/
+      /*-------- Timeline Page ---------*/
+
+      /* place the vertical timeline ruler to the center */
+      .timeline::after {
+        left: 50%;
+      }
+
+      .container {
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+        padding: 10px 40px;
+      }
+
+      /* Fix the circle for containers on the right side */
+      .right::after {
+        left: -14px;
+      }
+
+
+      /* Fix the circle for containers on the right side */
+      .right::after {
+        left: -14px;
+      }
+
+
+      /* Place the left container to the left */
+      .left {
+        left: 0;
+      }
+
+      /* Place the container to the right */
+      .right {
+        left: 50%;
+      }
+
+      .left::after {
+        left: 390px;
       }
 
 }

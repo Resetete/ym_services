@@ -1420,6 +1420,12 @@ footer p {
         margin: 0;
       }
 
+      /* The circles on the timeline */
+      .container::after {
+        top: 55px;
+      }
+
+
       /* Fix the circle for containers on the right side */
       .right::after {
         left: -14px;
@@ -1431,7 +1437,7 @@ footer p {
       }
 
       .left::after {
-      	left: 326px;
+      	left: 382px;
       }
 
 
@@ -1459,6 +1465,8 @@ footer p {
           left: 9px;
           border: 0.5px dashed #253449;
       }
+
+
 
       /*------------------*/
       /* style intro item */
@@ -1509,7 +1517,7 @@ footer p {
         position: absolute;
         width: 20px;
         height: 20px;
-        right: -17px;
+        left: 382px;
         background-color: #253449;
         border: 4px solid #253449;
         top: 55px;
@@ -1533,6 +1541,8 @@ footer p {
             right: 10px;
             border: 0.5px dashed #253449;
         }
+
+
 
       .time-bubble time {
         color: #3FB5AD; /* container color */

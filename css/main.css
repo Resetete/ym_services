@@ -1178,6 +1178,74 @@ footer p {
   font-family: sans-serif;
 }
 
+/**************************************************************+/
+/*----------------- Publications & Projects Page ***************/
+/***************************************************************/
+
+.projects-pubs-site  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.projects-pubs-site .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.projects-pubs-site h1 {
+  color: black;
+}
+
+.projects-pubs-site .content {
+  padding: 0;
+  margin: 0;
+}
+
+/* highlight publication div holding the highlight-pubs-item  */
+.highlight-pubs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.highlight-pubs-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+  width: 90%;
+  padding: 15px;
+  background-color: #EEA231;
+  border-radius: 20px;
+  margin: 10px;
+  width: 200px;
+}
+
+.normal-pubs-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+  width: 90%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  width: 200px;
+}
+
+
+.fas { /* styling fontawesome arrow */
+  color: white;
+  font-size: 2em;
+}
+
 
 /* ==========================================================================
    Helper classes

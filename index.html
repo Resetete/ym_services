@@ -34,6 +34,28 @@
         <link rel="stylesheet" href="css/normalize.css"/>
         <!-- Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:400,600,700,800|Roboto+Slab:400,700|Source+Sans+Pro:300,400,700,900|Source+Serif+Pro:400,600,700|Titillium+Web:300,400,600,700,900" rel="stylesheet">
+        <!-- START cookie law popup window -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+        <script>
+          window.addEventListener("load", function(){
+          window.cookieconsent.initialise({
+            "palette": {
+              "popup": {
+                "background": rgb(39,52,71,0.8),
+                "text": rgb(228,164,74)
+              },
+              "button": {
+                "background": rgb(163,70,87),
+                "text": rgb(235,239,238)
+              }
+            },
+            "theme": "edgeless",
+            "content": {
+              "message": "Meine Seite verwendet Cookies, um die Zugriffe auf meine Seite analysieren und sie für Sie optimieren zu können."
+            }
+          })});
+          </script>
+        <!-- END cookie law popup window -->
     </head>
 
 <body>

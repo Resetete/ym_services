@@ -1665,7 +1665,7 @@ footer p {
 @media only screen and (min-width: 1200px) {
   /* -------- Desktop styles here   ----------*/
       hr { /* puts the objectives on hero image narrower */
-          margin: 1em 0;
+          margin: 0.5em 0;
       }
 
       .btn {
@@ -1714,10 +1714,14 @@ footer p {
         width: 25%; /* set size of the logo on hero image */
       }
 
-      .user-engagement button {
-        margin: 0 4vw;
+      .user-engagement  {
+        margin: 5vh 4vw 0 4vw;
       }
 
+      .text-wrapper-hero { /* hero image text of services description */
+        height: 50vh; /* text block height should be at least 50% of viewport height */
+        overflow: hidden; /* if text doesn't match height --> hidde overflowing text */
+      }
       /*------ welcoming section -----*/
 
       .welcoming .content-wrapper {
